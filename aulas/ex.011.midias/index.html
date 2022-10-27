@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <h3>Tente abrir essa imagem em varios dispositivos diferentres</h3>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem_P.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem_M.png" type="image/png">
+        <img src="imagens/imagem_G.png" alt="imagem g">
+
+        <h1>Vamos reproduzir audio no site</h1>
+        <p>Vamos aprender a colocar audio </p>
+        <audio src="midia/happy-mistake.mp3" autoplay controls loop></audio>
+        <h2>esse é o primeiro jeito para colocar audio no site</h2>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.mp3" type="audio/ogg">
+        <source src="midia/happy-mistake.mp3" type="audio/wav">
+        <h2>esse é o segundo jeito com os tres formatos diferentes</h2>
+        <h2>esses são os dois jeitos de colocar audio no site</h2>
+        <h1>Quatros tipos diferentes de arquivos para vídeos</h1>
+        <ul>
+            <li>MP4</li>
+            <li>M4V</li>
+            <li>Wweb</li>
+            <li>OGV</li>
+        </ul>
+    </picture>
+    
+</body>
+</html>
