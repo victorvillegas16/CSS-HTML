@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exerecicio 5</title>
+
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        caption{
+            font-size: 2.2em;
+            padding: 8px;
+        }
+
+        table{
+            width: 500px;
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        col.csexo{ 
+            background-color:chartreuse
+        }
+
+        col.cnome{
+            background-color: aqua;
+        }
+
+    </style>
+</head>
+<body>
+
+
+    <h1>Exercicio de tabelas</h1>
+
+    <table>
+
+        <colgroup>
+            <col class="cnome">
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">nome</th>
+            <th scope="col">sexo</th>
+            <th scope="col">idade</th>
+            <th scope="col">profissão</th>
+        </tr>
+
+        <tr class="destaque">
+            <td>maria</td>
+            <td>feminino</td>
+            <td>26</td>
+            <td>vendedora</td>
+        </tr>
+
+        <tr>
+            <td>mario</td>
+            <td>masculino</td>
+            <td>86</td>
+            <td>gerente</td>
+        </tr>
+
+        <tr>
+            <td>cleber</td>
+            <td>masculino</td>
+            <td>45</td>
+            <td>supervisor</td>
+        </tr>
+
+        <tr>
+            <td>belluda</td>
+            <td>feminino</td>
+            <td>23</td>
+            <td>nutricionista</td>
+        </tr>
+
+        <tr>
+            <td>victor</td>
+            <td>masculino</td>
+            <td>24</td>
+            <td>t.i</td>
+        </tr>
+    </table>
+
+</body>
+</html>

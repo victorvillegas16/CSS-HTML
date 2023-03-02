@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabelas responsivas</title>
+    <style>
+        body{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+
+        caption{
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 10px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        th, td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even){
+            background-color: grey;
+        }
+
+        div#container{
+            width:50vw;
+            overflow-x: auto;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Tabelas Em telas pequenas</h1>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus recusandae, magnam iste sint necessitatibus repudiandae voluptatibus ea placeat dolor quos deserunt obcaecati, ad quae accusamus repellendus non, est corrupti error?</p>
+
+    <div id="container">
+        <table>
+            <caption>Tabelas Responsivas</caption>
+                    <thead>
+                        <tr>
+                            <th>Produto</th>
+                            <th>jan</th>
+                            <th>fev</th>
+                            <th>mar</th>
+                            <th>abr</th>
+                            <th>mai</th>
+                            <th>jun</th>
+                            <th>mar</th>
+                            <th>abr</th>
+                            <th>mai</th>
+                            <th>jun</th>
+                        </tr>
+                    </thead>
+            <tbody>
+                <tr>
+                    <th>lapis</th>
+                    <td>14</td>
+                    <td>12</td>
+                    <td>4</td>
+                    <td>47</td>
+                    <td>48</td>
+                    <td>77</td>
+                </tr>
+                <tr>
+                    <th>caneta</th>
+                    <td>44</td>
+                    <td>22</td>
+                    <td>45</td>
+                    <td>78</td>
+                    <td>74</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <th>carro</th>
+                    <td>15</td>
+                    <td>456</td>
+                    <td>788</td>
+                    <td>789</td>
+                    <td>44</td>
+                    <td>11</td>
+                </tr>
+                <tr>
+                    <th>tenis</th>
+                    <td>45</td>
+                    <td>78</td>
+                    <td>789</td>
+                    <td>562</td>
+                    <td>45</td>
+                    <td>78</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
