@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meu primeiro formulário
+    </title>
+</head>
+<body>
+    <h1>meu primeiro formilário</h1>
+    <!-- todo formulário deve estar entre form e /form -->
+
+    <!-- para desligar o preenchimento automatico nop formulario usar a função = autocomplete "off" -->
+
+    <!-- method = POST não aparece as informaçoes no final do endereço https
+        method= GET aparece as informações e não consegue ultrapassar 3000 bytes equivalente a 3000 letras já somando com os dados do formulário -->
+
+    <form action="cadastro.php" method="get" autocomplete="off">
+       
+        <!-- label da uma relação entre o id do input em mecanismo de busca e aumenta a area de selecionar o campo desejado (USAR SEMPRE)-->
+
+        <p><label  for="inome">nome:</label> 
+            <input type="text" name="nome" id="inome"></p>
+
+        <p><label for="isobrenome">sobrenome:</label> 
+            <input type="text" name="sobrenome" id="isobrenome"></p>
+
+        <p><input type="submit" value="ENVIAR AGORA"></p>
+
+</body>
+</html>

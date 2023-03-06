@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário</title>
+</head>
+<body>
+    <h1>teste de formulário</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+<!-- 
+    requerid = não permite que envie o formulário em branco
+    maxleght = max de caracteres permitido
+    minlenght = min de caracteres permitido
+    size = tamanho da caixa
+    placeholder = uma dica do que o usuário pode colocar em cada campo
+    autocompelete no input = serve para dizer o que é a caixa escolhida para colocar o preenchimento automático do navegador
+ -->
+        <p>
+            <label for="iusu">usuário:</label> 
+            <input type="text" name="usuario" id="iusu" required maxlength="10" minlength="5" placeholder="nome do usuário"></input>
+        </p>
+
+        <p>
+            <label for="isen">senha:</label> 
+            <input type="password" name="senha" required id="isen" maxlength="10" min="6" size="8" placeholder="digite a senha">
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+</body>
+</html>
