@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mais dicas sobre formulários</title>
+</head>
+<body>
+    <h2>escolha seus esportes favoritos</h2>
+    <form action="cadastro.php">
+
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="imasc" value="M"><label for="imasc">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label> <br>
+        </fieldset>
+
+        <!-- label = relacionar a palavra com a caixa de seleção, util para telas pequenas de dificil acesso -->
+        <!-- checkbox = criar caixas de seleção  -->
+        <fieldset>
+            <legend>Esportes</legend>
+            <input type="checkbox" name="espfut" id="iespfut"><label for="iespfut">futebol</label> <br>
+            <input type="checkbox" name="espbas" id="iespbas"><label for="iespbas">basquete</label> <br>
+            <input type="checkbox" name="espnat" id="iespnat"><label for="iespnat">natação</label> <br>
+            <input type="checkbox" name="esphan" id="iesphan"><label for="iesphan">handball</label>
+        </fieldset>
+        <!-- checked = serve para que mesmo que atualize a página o item já apareça marcado -->
+        <!-- em radio não da pra colocar em mais de um CHECKED, os dois tem que ter o mesmo NAME-->
+        <p>
+            <input type="submit" value="enviar dados">
+            <input type="reset" value="limpar seleção">
+        </p>
+    </form>
+</body>
+</html>
