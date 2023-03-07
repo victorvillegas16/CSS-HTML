@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exemplo de formulários</title>
+</head>
+<body>
+    <h1>email e número de telefone</h1>
+    <!-- estuidar sobre ReGex -->
+    <form action="cadastro.php"
+    autocomplete="on" >
+
+    <!-- fieldset = serve para agrupar dados do mesmop segmento
+         legend = personalizar o grupo de dados selecionados identificando ele no começo da caixa-->
+
+    <fieldset>
+        <legend>Dados pessoais</legend>
+        <p>
+            <label for="inome">nome: </label>
+            <input type="text" name="nome" id="inome" autocomplete="name" placeholder="digite seu nome" required>
+        </p>
+        <p>
+            <label for="iemail">email: </label>
+            <input type="email" name="email" id="iemail" required placeholder="digite seu email" autocomplete="email" maxlength="30" minlength="10">
+        </p>
+        <p>
+            <label for="itel">telefone: </label>
+            <input type="tel" name="tel" id="itel"autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxxx-xxxx">
+                 <!-- pattern="^\(\d{2}\)\d{4,5}-\d{4}$" = descrever o formato de (11)xxxx-xxxx
+        (\ = os dois juntos é parenteses no código -->
+    </p>
+        
+    </fieldset>
+
+    <p><input type="submit" value="enviar">
+    <input type="reset" value="limpar"></p>
+
+</form>
+</body>
+</html>
