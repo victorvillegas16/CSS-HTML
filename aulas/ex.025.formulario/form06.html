@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mais input</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="off
+    ">
+        <fieldset>
+            <legend>encheção de linguiça</legend>
+            <label for="icor">cor:</label>
+            <input type="color" name="cor" id="icor"> <br>
+            <p>
+                <label for="inivel">Nível de satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="1"> <br>
+            </p>
+            <p>
+                <label for="ifoto"></label>
+                <input type="file" name="foto" id="ifoto">
+        </fieldset>
+        </p>
+
+        <!-- input:file = serve para selecionar arquivos de foto, currículo e etc...
+             input:img = não permite que o usuario selecione a foto só vizualize -->
+
+        <!-- range = régua com diferentes niveis
+        se quiser que quando atualize a pag já comece em um valor determinado colocar o atributo VALUE -->
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar seleção">
+        </p>
+    </form>
+</body>
+</html>
