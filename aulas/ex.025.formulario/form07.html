@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=3, initial-scale=1.0">
+    <title>outros formulários</title>
+</head>
+<body>
+    <form action="cadastro.php">
+<!-- todo select tem (</select>) -->
+        <label for="iestado">estado:</label>
+        <select name="estado" id="iestado">
+<!-- 
+    label atributo no optgroup serve como identificador
+    label elemento usado no input, select e etc...
+    Select = serve para quando atualizar a pag já vir com algum estado selecionado
+ -->        <option value="" selected>--- escolha ---</option>
+            <optgroup label="Região-Sudeste">
+                <option value="sp">são paulo</option>
+                <option value="rj">rio de janeiro</option>
+                <option value="sc">santa catarina</option>
+            </optgroup>
+
+            <optgroup label="Região-nordeste">
+                <option value="mr">Maranhão</option>
+                <option value="pm">Pernambuco</option>
+                <option value="sg">Sergipe</option>
+            </optgroup>
+
+        </select>
+
+        <p>
+            <label for="iprof">profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <!-- o input tem que estar lincado com "list" com o "id" da datalist -->
+            <datalist id="lstprof">
+                <option value="prof">professor</option>
+                <option value="dev">desenvolvedor</option>
+                <option value="adm">administrador</option>
+                <option value="cont">contador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="itesto">digite sua mensagem:</label> <br>
+            <textarea name="texto" id="itexto" cols="30" rows="10" placeholder="digite seu texto aqui"></textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar seleção">
+        </p>
+    </form>
+</body>
+</html>
