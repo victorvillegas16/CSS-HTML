@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* css usado pata telas */
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: rgb(93, 86, 86);
+}
+
+header>h1{
+    background-color: darkred;
+    padding: 30px;
+    text-align: center;
+    color: white;
+
+}
+
+menu{
+    color: aliceblue;
+}
+
+menu ul{
+    list-style-type: none;
+    background-color: gray;
+}
+
+menu li{
+    background-color: lightslategray;
+    padding: 10px;
+    display: inline-block;
+}
+
+article{
+    padding: 15px;
+    width: 600px;
+    margin: auto;
+    display: block;
+}

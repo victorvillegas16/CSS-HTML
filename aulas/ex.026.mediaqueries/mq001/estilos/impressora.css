@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+/* css usado para impressora */
+
+*{
+    margin: 10px;
+    padding: 10px;
+}
+
+html{
+    font-size: 1.5em;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5em;
+}
+
+menu{
+    display: none;
+    /* display:none = serve para desativar a informação na hora de impressão */
+}
+
+article::after{
+    content: 'esse site foi impresso atráves do site do victorio';
+    /* after = serve para colocar considerações finais na hora de impressão */
+}
+article{
+    width: 100vw;
+}
