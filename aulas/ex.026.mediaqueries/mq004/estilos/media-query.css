@@ -20,22 +20,29 @@ grandes telas: acima 1200px */
         width: 90vw;
     }
     main::after{
-        content: 'essa impressão foi feita pela victor' ;
+        content: 'essa impressão foi feita pelo victor' ;
         text-decoration: overline;
         /* overline = coloca uma linha em cima separando o conteudo */
-}
+    }
+    }
 /*tablete*/
 @media screen and (min-width:768px) and (max-width:992px) {
     body{
         background-image: url(../imagens/back-tablet.jpg);
-        
     }
+
         img#tv {display: none;}
         img#phone { display: none;}
         img#tablet {display: block;}
         img#print {display: none;}
         img#desk {display: none;}
-}
+/* display = block ta disponoivel para visualização
+    display = none n]ao está disponível para visualização */
+        h2#tsmar{display: none;}
+        h2#ttable{display: block;}
+        h2#tdesk{display: none;}
+        h2#ttv{display: none;}
+    }
 /*desktop*/
 @media screen and (min-width:992px) and (max-width:1200px){
     body{
@@ -46,7 +53,12 @@ grandes telas: acima 1200px */
         img#tablet {display: none;}
         img#print {display: none;}
         img#desk {display: block;}
-}
+
+        h2#tsmar{display: none;}
+        h2#ttable{display: none;}
+        h2#tdesk{display: block;}
+        h2#ttv{display: none;}
+    }
 /*telas grandes*/
 @media screen and (min-width:1200px) {
     body{
@@ -57,4 +69,9 @@ grandes telas: acima 1200px */
         img#tablet {display: none;}
         img#print {display: none;}
         img#desk {display: none;}
-}
+
+        h2#tsmar{display: none;}
+        h2#ttable{display: none;}
+        h2#tdesk{display: none;}
+        h2#ttv{display: block;}
+    }

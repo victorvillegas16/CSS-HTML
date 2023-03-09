@@ -39,6 +39,11 @@ h2{
     text-shadow: 2px 2px 2px black;
 }
 
+h2#tsmar{display: block;}
+h2#ttable{display: none;}
+h2#tdesk{display: none;}
+h2#ttv{display: none;}
+
 img {
     display: block;
     margin: auto;
