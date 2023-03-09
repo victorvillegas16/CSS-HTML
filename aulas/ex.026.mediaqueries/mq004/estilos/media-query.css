@@ -1,0 +1,60 @@
+@charset "utf-8";
+
+/* css para as demais midias */
+
+/* typical device breakpoint
+
+pequenas telas: até 600px
+celular: 600px até 768px
+tabelete: 768px até 992px
+desktop: 992px até 1200px
+grandes telas: acima 1200px */
+
+
+@media print{
+    body{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    main{
+        border: 2px solid black;
+        width: 90vw;
+    }
+    main::after{
+        content: 'essa impressão foi feita pela victor' ;
+        text-decoration: overline;
+        /* overline = coloca uma linha em cima separando o conteudo */
+}
+/*tablete*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    body{
+        background-image: url(../imagens/back-tablet.jpg);
+        
+    }
+        img#tv {display: none;}
+        img#phone { display: none;}
+        img#tablet {display: block;}
+        img#print {display: none;}
+        img#desk {display: none;}
+}
+/*desktop*/
+@media screen and (min-width:992px) and (max-width:1200px){
+    body{
+        background-image: url(../imagens/back-pc.jpg);
+    }
+        img#tv {display: none;}
+        img#phone { display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#desk {display: block;}
+}
+/*telas grandes*/
+@media screen and (min-width:1200px) {
+    body{
+        background-image: url(..//imagens/back-tv.jpg);
+    }
+        img#tv {display: block;}
+        img#phone { display: none;}
+        img#tablet {display: none;}
+        img#print {display: none;}
+        img#desk {display: none;}
+}

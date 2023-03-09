@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+/* versão Mobile first */
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.3em;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* usar "hmtl" e "body" juntos pode causar barra de rolagem na pag do site
+sempre fazer com os dois separados para cada uma  */
+ html{
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+body{
+    background: black url(../imagens/back-phone.jpg) no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+
+main {
+    background-color: rgba(255, 255, 255, 0.318);
+    width: 90vw;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+h2{
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+img {
+    display: block;
+    margin: auto;
+}
+
+img#tv {display: none;}
+img#phone { display: block;}
+img#tablet {display: none;}
+img#print {display: none;}
+img#desk {display: none;}
